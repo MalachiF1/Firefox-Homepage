@@ -1,38 +1,70 @@
+body {
+	background: linear-gradient(45deg, rgba(51, 51, 51, 1) 0%, rgba(36, 36, 36, 1) 49%, rgba(31, 31, 31, 1) 100%);
+	display: grid;
+	place-content: center;
+	height: 97.6vh;
+	width: 97.6vw;
+}
+
 .App {
-  text-align: center;
+	width: 90vw;
+	height: 90vh;
+	display: grid;
+	place-content: center;
+	text-align: center;
+	font-family: 'Georama Light', sans-serif;
+	color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.time {
+	font-size: 5em;
+	margin-bottom: 0.2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.day {
+	display: inline;
+	font-size: 2.8em;
+	margin-right: 0.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.date {
+	display: inline;
+	font-size: 2.8em;
+	margin-left: 0.2em;
 }
 
-.App-link {
-  color: #61dafb;
+.greeting {
+	margin-top: 2em;
+	font-size: 2em;
+	margin-bottom: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#search-bar {
+	margin: 2em;
+	font-family: 'Georama Light', sans-serif;
+	width: 37em;
+	height: 3em;
+	border-radius: 1em;
+	padding-left: 2.8em;
+	padding-right: 10px;
+	border: none;
+	background: rgb(255, 255, 255) url('./images/google-icon.png') no-repeat;
+	background-position-x: 0.3em;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: 1.9em;
+}
+
+#search-bar:focus {
+	outline: none !important;
+	border: 3px;
+	border-color: rgb(150, 150, 150);
+	box-shadow: 0 0 7px rgb(150, 150, 150);
+}
+
+.bookmarks-container {
+	display: inline;
+	place-content: center;
+	margin-top: 1em;
+	margin-bottom: 6em;
 }

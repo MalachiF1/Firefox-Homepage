@@ -1,0 +1,18 @@
+.bookmark-background {
+	display: inline-grid;
+	place-content: center;
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: white;
+	border-radius: 10em;
+	width: 4.5em;
+	height: 4.5em;
+	background-color: white;
+	margin: 1em;
+	margin-top: 0em;
+	padding-top: 0em;
+}
+
+.bookmark-icon {
+	width: 3.5em;
+}
